@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Admin</title>
+  </head>
+  <body>
+      <!--<script src="nav.txt"></script>-->
+
+      <div id="menuPosition">
+        <img alt="Logo" id="logo" src="img/goodLogoNav.PNG">
+        <div id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+          <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin</a>
+          </nav>
+      </div>
+
+    <div class="banner">
+      <img alt="Admin Tomatoes Logo" src="img/adminBanner.PNG">
+    </div>
+
+    <div class="adminReviews">
+      <h1 id="formTitle">Reviews</h1>
+      <div class="underline"></div>
+      <!--User Input -->
+      <div class="adminForm">
+      <form class="adminInput">
+        <label for="title">Movie Title:</label><input type="text" id="title">
+        <label for="synopsis">Synopsis:</label><textarea id="synopsis"></textarea>
+        <label for="review">Review:</label><textarea id="review"></textarea>
+        <label for="date">Release date:</label><input type="date" id="date">
+        <label for="moviePoster">Movie Poster:</label><input type="text" id="moviePoster">
+        <label for="trailer">Trailer URL:</label><input type="text" id="trailer">
+        <input type="hidden" id="id">
+        <button id="modifyReviewButton">Add Review</button>
+      </form>
+    </div>
+
+
+      <div class="sort">
+        <p>Sort by post date:
+          <label>Newest<input type="radio" name="sort" checked/></label>
+          <label>Oldest<input type="radio" name="sort"/></label>
+        </p>
+      </div>
+
+
+      <div id="reviewsList" class="homeContent grid">
+          <div class="content">
+            <div class="gridContainer">
+              <div class="summary">
+                <img alt="Movie Poster" class="moviePoster" src="#"/>
+                <details>
+                  <summary>title</summary>
+                  <div id="vidSize">
+                    <iframe class="trailer" src="#"></iframe>
+                  </div>
+                  <div class="buttons"></div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pouchdb/7.0.0/pouchdb.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>

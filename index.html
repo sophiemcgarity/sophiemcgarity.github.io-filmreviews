@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttonHide.css">
+    <title>Good Tomatoes</title>
+  </head>
+  <body class="indexStyle">
+      <!--<script class="navInput" type="text/javascript" src="nav.txt"></script>-->
+
+      <div id="menuPosition">
+        <img id="logo" alt="Logo" src="img/goodLogoNav.PNG">
+        <div id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+          <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin</a>
+          </nav>
+        </div>
+
+    <div class="banner">
+      <img alt="Logo Banner" src="img/goodLogoBanner.PNG">
+    </div>
+
+    <div class="adminReviews">
+        <h1>Movies</h1>
+      <h2>Film Reviews</h2>
+
+      <div class="sort">
+        <p>Sort by post date:
+          <label>Newest<input type="radio" name="sort" checked/></label>
+          <label>Oldest<input type="radio" name="sort"/></label>
+        </p>
+      </div>
+      <div class="underline"></div>
+      </div>
+
+      <div id="reviewsList" class="homeContent grid">
+          <div class="content">
+            <div class="gridContainer">
+              <div class="summary">
+                <img alt="Movie Poster" class="moviePoster" src="#"/>
+                <details>
+                  <summary>title</summary>
+                  <div id="vidSize">
+                    <iframe class="trailer" src="#"></iframe>
+                  </div>
+
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--
+
+  Dummy data to create CSS styling before outputting through local storage
+    <div class="homeContent">
+      <div class="underline"></div>
+      <h3>Box Office Reviews</h3>
+        <div class="content">
+          <div class="text">
+            <img src="img/fantasticBeasts.jpg">
+            <div class="summary">
+            <h4>Movie Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+          </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="text">
+            <img src="img/fantasticBeasts.jpg">
+            <div class="summary">
+            <h4>Movie Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+          </div>
+          </div>
+        </div>
+        <div class="allLink">
+          <a href="#">All Box Office Reviews</a>
+        </div>
+    </div>
+    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pouchdb/7.0.0/pouchdb.js"></script>
+  <script src="js/script.js"></script>
+
+  </body>
+</html>
